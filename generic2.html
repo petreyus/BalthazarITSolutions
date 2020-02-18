@@ -7,6 +7,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--<script>    function sendData(){console.log("finally working");}    </script> -->
 	</head>
 	<body class="subpage">
 
@@ -43,9 +44,55 @@
 							<header class="align-center">
 								<p>Contact Us Below</p>
 								<h2>
-									josibalthazar@gmail.com</h2>
+									BalthazarITSolutions@gmail.com
+</h2>
 							</header>
                                 <p> </p>
+
+
+								<h3>Contact Form</h3>
+
+								<div class="container">
+								 <!--- this is an old style not supported on many browsers <form action="/action_page.php"> -->
+									<form id='contact_us' method='post' data-netlify="true" onsubmit='return sendData();'>
+									
+									<form onsubmit=" return sendData()">
+									<label for="fname">First Name</label>
+									<input type="text" id="fname" name="firstname" placeholder="Your name..">
+								
+									<label for="lname">Last Name</label>
+									<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+								
+									<label for="country">County</label>
+									<select id="county" name="county">
+									  <option value="Okaloosa">Okaloosa</option>
+									  <option value="Santa Rosa">Santa Rosa</option>
+									  <option value="Escambia">Escambia</option>
+									  <option value="Walton">Walton</option>
+									  <option value="Holmes">Holmes</option>
+									  <option value="Washington">Washington</option>
+									  <option value="Bay">Bay</option>
+									  <option value="Jackson">Jackson</option>
+
+									</select>
+								
+									<label for="subject">Subject</label>
+									<textarea id="subject" name="subject" placeholder="Briefly detail your problem.." style="height:200px"></textarea>
+								
+									<input type="submit" value="Submit">
+								  </form>
+								</div>
+
+
+										
+
+
+
+
+
+
+
+
 
 						</div>
 					</div>
